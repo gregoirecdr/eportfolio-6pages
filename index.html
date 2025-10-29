@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Home – Grégoire Cendré</title>
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">GC • E-Portfolio</div>
+    <button class="btn menu-btn" aria-controls="site-nav" aria-expanded="false" id="menuToggle">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="engineering-courses.html">Engineering Courses</a>
+      <a href="mobility.html">Mobility</a>
+      <a href="civic-engagement.html">Civic Engagement</a>
+      <a href="sports-hobbies.html">Sports & Hobbies</a>
+      <a href="career.html">Career Development</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+
+      <h1>Grégoire Cendré </h1>
+      <p class="lead">Engineering Student</p>
+
+      <!-- Portrait -->
+      <div class="portrait-wrap">
+        <img src="images/portrait.jpg" alt="Portrait of Grégoire Cendré" class="portrait">
+      </div>
+
+      <!-- Mini texte d'intro -->
+      <p class="home-intro">
+        Welcome to my personal e-portfolio, where I share my academic journey, international mobility, projects and future ambitions as an engineer.
+      </p>
+
+      <!-- Video card -->
+      <article class="video-card center">
+        <h2 class="video-title">Presentation Video</h2>
+        <div class="video-frame portrait contain">
+          <video controls preload="metadata" poster="images/video-poster.jpg" playsinline webkit-playsinline>
+          <source src="media/intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  Contact: <a href="mailto:gregoirecendre@etu-n7.toulouse.fr">gregoirecendre@etu-n7.toulouse.fr</a> •
+  <a href="https://www.linkedin.com/in/grégoire-cendré-1942a5372/" target="_blank" rel="noreferrer"> LinkedIn</a>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('site-nav');
+  if (btn) btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+</script>
+
+</body>
+</html>

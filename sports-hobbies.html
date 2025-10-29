@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sports & Hobbies – Grégoire Cendré</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">GC • Portfolio</div>
+    <button class="btn menu-btn" aria-controls="site-nav" aria-expanded="false" id="menuToggle">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" class="">Home</a>
+        <a href="engineering-courses.html" class="">Engineering Courses</a>
+        <a href="mobility.html" class="">Mobility</a>
+        <a href="civic-engagement.html" class="">Civic Engagement</a>
+        <a href="sports-hobbies.html" class="active">Sports & Hobbies</a>
+        <a href="career.html" class="">Career Development</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Banner with small badge -->
+  <section class="section-split banner-split">
+    <div class="split">
+      <div class="left">
+        <h1>Sports & Hobbies</h1>
+        <p class="lead">
+          Balance between endurance sports and creative interests — a driver for discipline, focus, and long-term well-being.
+        </p>
+      </div>
+      <div class="right">
+        <div class="hero-badge">
+          <img src="images/sports-hero.jpg" alt="Sports highlight">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports cards -->
+  <section class="section-split">
+    <div class="container">
+      <h2>Sports</h2>
+
+      <div class="cards-4">
+        <!-- Vélo de route -->
+        <article class="card sport">
+          <figure class="thumb">
+            <img src="images/sport-cycling.jpg" alt="Road cycling">
+          </figure>
+          <h3>Road Cycling</h3>
+          <ul class="bullet">
+            <li>Endurance & pacing strategy</li>
+            <li>Structured training (intervals, climbs)</li>
+            <li>Equipment & fit optimization</li>
+          </ul>
+        </article>
+
+        <!-- Course à pied -->
+        <article class="card sport">
+          <figure class="thumb">
+            <img src="images/sport-running.jpg" alt="Running">
+          </figure>
+          <h3>Running</h3>
+          <ul class="bullet">
+            <li>Consistency & discipline</li>
+            <li>5K–10K speed work</li>
+            <li>Recovery & injury prevention</li>
+          </ul>
+        </article>
+
+        <!-- Surf -->
+        <article class="card sport">
+          <figure class="thumb">
+            <img src="images/sport-surf.jpg" alt="Surf">
+          </figure>
+          <h3>Surf</h3>
+          <ul class="bullet">
+            <li>Reading conditions & timing</li>
+            <li>Strength & mobility</li>
+            <li>Resilience and mindset</li>
+          </ul>
+        </article>
+
+        <!-- Ski -->
+        <article class="card sport">
+          <figure class="thumb">
+            <img src="images/sport-ski.jpg" alt="Ski">
+          </figure>
+          <h3>Ski</h3>
+          <ul class="bullet">
+            <li>Balance & edge control</li>
+            <li>Exploration mindset</li>
+            <li>Cold-weather focus</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="section-split">
+    <div class="container">
+      <h2>Hobbies</h2>
+      <div class="two-col">
+        <article class="card neo">
+          <h3>Music</h3>
+          <p>
+            Music for focus and recovery. From instrumental playlists for deep work
+            to live sessions for creative reset.
+          </p>
+        </article>
+        <article class="card neo">
+          <h3>Technology</h3>
+          <p>
+            Curious about software, data tooling, and product design. I explore how
+            technology augments learning, performance, and workflows.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it brings -->
+  <section class="section-split">
+    <div class="container">
+      <h2>What It Brings</h2>
+      <ul class="chipset">
+        <li>Rigor</li>
+        <li>Discipline</li>
+        <li>Stress management</li>
+        <li>Pleasure</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Contact: <a href="mailto:gregoirecendre@etu-n7.toulouse.fr">gregoirecendre@etu-n7.toulouse.fr</a> • 
+  <a href="https://www.linkedin.com/in/grégoire-cendré-1942a5372/" target="_blank" rel="noreferrer">LinkedIn</a>
+</footer>
+<script>
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('site-nav');
+  if (btn) btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+</script>
+
+</body></html>

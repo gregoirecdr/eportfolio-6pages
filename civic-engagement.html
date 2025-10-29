@@ -1,0 +1,159 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Civic Engagement – Grégoire Cendré</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">GC • Portfolio</div>
+    <button class="btn menu-btn" aria-controls="site-nav" aria-expanded="false" id="menuToggle">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" class="">Home</a>
+        <a href="engineering-courses.html" class="">Engineering Courses</a>
+        <a href="mobility.html" class="">Mobility</a>
+        <a href="civic-engagement.html" class="active">Civic Engagement</a>
+        <a href="sports-hobbies.html" class="">Sports & Hobbies</a>
+        <a href="career.html" class="">Career Development</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Banner split: title + logo -->
+<section class="section-split banner-split">
+  <div class="split">
+    <div class="left">
+      <h1>Civic Engagement</h1>
+      <p class="lead">
+        My involvement in associations that helped me grow both personally and professionally —
+        from intercultural programs to business consulting projects.
+      </p>
+    </div>
+
+    <!-- Two logos side by side -->
+    <div class="right logos-duo">
+      <div class="hero-badge">
+        <img src="images/cisv-logo.jpg" alt="CISV Logo">
+      </div>
+      <div class="hero-badge">
+        <img src="images/n7consulting-logo.png" alt="N7 Consulting Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About CISV -->
+  <section class="section-split">
+    <div class="container">
+      <h2>About CISV</h2>
+      <p>
+        CISV (<em>Children’s International Summer Villages</em>) is a global organization promoting peace education
+        through international camps and exchanges. Its goal is to inspire individuals to become active global citizens,
+        open to diversity, dialogue, and cooperation.
+      </p>
+      <blockquote class="quote">
+        “Building global friendship and understanding through youth action and education.”
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Personal experience -->
+  <section class="section-split">
+    <div class="container">
+      <h2>My Experience with CISV</h2>
+
+      <article class="card neo">
+        <h3>🇯🇵 Nagoya, Japan — Summer Camp (1 month)</h3>
+        <p>
+          My first CISV camp — and the first time I spoke English. During this month, I joined youth from all over the world
+          in activities and discussions around major issues: <strong>ecology, peace, discrimination, and global cooperation</strong>.
+          It was a turning point that boosted my communication skills and self-confidence.
+        </p>
+        <figure class="thumb">
+          <img src="images/cisv-japan.jpg" alt="CISV Japan Camp">
+          <figcaption>International youth village — Nagoya, Japan</figcaption>
+        </figure>
+      </article>
+
+      <article class="card neo">
+        <h3>🇩🇪 Wiesbaden, Germany — Junior Camp (3 weeks)</h3>
+        <p>
+          Three weeks of cultural and educational exchange with participants from Europe, focused on teamwork,
+          intercultural dialogue, and leadership activities.
+        </p>
+        <figure class="thumb">
+          <img src="images/cisv-germany.jpg" alt="CISV Germany Camp">
+          <figcaption>Cultural exchange in Wiesbaden, Germany</figcaption>
+        </figure>
+      </article>
+
+      <article class="card neo">
+        <h3>🇪🇸 Vigo, Spain — Exchange Program (4 weeks total)</h3>
+        <p>
+          A two-way exchange with a Spanish correspondent: two weeks in Spain with his family, then two weeks in France.
+          This experience strengthened my independence, adaptability, and understanding of cultural differences.
+        </p>
+        <figure class="thumb">
+          <img src="images/cisv-spain.jpg" alt="CISV Spain Exchange">
+          <figcaption>Exchange life — Vigo, Spain</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section-split">
+    <div class="container">
+      <h2>What It Brought Me</h2>
+      <ul class="chipset">
+        <li>Adaptability & openness</li>
+        <li>Intercultural communication</li>
+        <li>English fluency & confidence</li>
+        <li>Leadership & empathy</li>
+        <li>Teamwork & global mindset</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+  <!-- About N7 COnsulting -->
+ <section class="section-split">
+  <div class="container">
+    <h2>N7 Consulting — Junior-Entreprise of ENSEEIHT</h2>
+    <p>
+      I am also a member of <strong>N7 Consulting</strong>, the <strong>Junior-Enterprise of ENSEEIHT</strong>.
+      This student-run organization offers consulting services to companies, allowing students to apply their
+      engineering knowledge to real-world projects.
+    </p>
+    <p>
+      Within the Junior-Enterprise, I hold the position of <strong>Business Manager</strong>.
+      My mission involves identifying client needs, preparing technical and commercial proposals, and ensuring
+      client satisfaction throughout the project lifecycle. This experience has strengthened my sense of
+      responsibility, communication skills, and business awareness.
+    </p>
+    <div class="hero-badge" style="width:180px;margin-top:16px;">
+      <img src="images/n7consulting-logo.png" alt="N7 Consulting Logo" style="border-radius:10px;">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Contact: <a href="mailto:gregoirecendre@etu-n7.toulouse.fr">gregoirecendre@etu-n7.toulouse.fr</a> • 
+  <a href="https://www.linkedin.com/in/grégoire-cendré-1942a5372/" target="_blank" rel="noreferrer">LinkedIn</a>
+</footer>
+<script>
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('site-nav');
+  if (btn) btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+</script>
+
+</body></html>

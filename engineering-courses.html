@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Engineering Courses – Grégoire Cendré</title>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">GC • Portfolio</div>
+    <button class="btn menu-btn" aria-controls="site-nav" aria-expanded="false" id="menuToggle">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" class="">Home</a>
+        <a href="engineering-courses.html" class="active">Engineering Courses</a>
+        <a href="mobility.html" class="">Mobility</a>
+        <a href="civic-engagement.html" class="">Civic Engagement</a>
+        <a href="sports-hobbies.html" class="">Sports & Hobbies</a>
+        <a href="career.html" class="">Career Development</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Intro courte -->
+  <section class="section-split banner-split">
+  <div class="split">
+    
+    <div class="left">
+      <h1>Engineering Courses</h1>
+      <p>
+        A selection of scientific and technical courses from my engineering curriculum,
+        combining mathematics, programming and computer systems.
+      </p>
+    </div>
+
+    <div class="right">
+     <div class="hero-badge">
+       <img src="images/engineering-banner.jpg" alt="Engineering illustration">
+     </div>
+    </div>
+
+
+  </div>
+  </section>
+
+
+  <!-- Bloc 1 — Prépa PSI -->
+  <section class="section-split">
+    <div class="container split">
+      <div class="left">
+        <h2>Preparatory Classes (PSI Track)</h2>
+        <p>Selective preparatory programme reinforcing advanced math & physics, engineering reasoning and problem-solving under pressure.</p>
+      </div>
+      <div class="right">
+        <article class="card neo">
+          <ul class="feature-list">
+            <li><strong>Main subjects:</strong> Mathematics, Physics, Engineering Sciences (SI), Computer Science, Industrial Mechanics & Modelling, Chemistry, English</li>
+            <li><strong>Skills developed:</strong> rigour, scientific reasoning, modelling, fast problem-solving</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloc 2 — ENSEEIHT (cursus actuel) -->
+  <section class="section-split">
+    <div class="container split">
+      <div class="left">
+        <h2>Engineering Curriculum — ENSEEIHT (Computer Sciences)</h2>
+        <p>Balanced focus on Data, numerical modelling and software engineering, with practical labs and teamwork.</p>
+      </div>
+      <div class="right">
+        <article class="card neo">
+          <ul class="feature-list cols-2">
+            <li>Probability & Statistics</li>
+            <li>Data Analysis</li>
+            <li>Optimisation & Modelling</li>
+            <li>Algorithms</li>
+            <li>Computer Architecture</li>
+            <li>Python, C, Ada, Java, Matlab</li>
+            <li>English & German</li>
+            <li>Management</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloc 3 — TIPE -->
+  <section class="section-split">
+    <div class="container split">
+      <div class="left">
+        <h2>TIPE — “Studying Supercooling Through Thermoelectric Regulation”</h2>
+        <p>Experimental study of supercooling with a Peltier-based setup. The work combines thermal control, sensor acquisition and data analysis to investigate phase-transition dynamics.</p>
+      </div>
+      <div class="right">
+        <article class="card neo">
+          <ul class="feature-list">
+            <li>Design: Peltier module + regulated control</li>
+            <li>Measurements: temperature sensing & logging</li>
+            <li>Analysis: data processing and interpretation</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="media/project-tipe.pdf">View Project (PDF)</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  Contact: <a href="mailto:gregoirecendre@etu-n7.toulouse.fr">gregoirecendre@etu-n7.toulouse.fr</a> • 
+  <a href="https://www.linkedin.com/in/grégoire-cendré-1942a5372/" target="_blank" rel="noreferrer">LinkedIn</a>
+</footer>
+<script>
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('site-nav');
+  if (btn) btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+</script>
+
+</body></html>
